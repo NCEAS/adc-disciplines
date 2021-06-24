@@ -1,0 +1,275 @@
+1,1,Humanities and Social Sciences
+2,11,Humanities
+3,101,Ancient Cultures
+4,10101,Prehistory
+5,10102,Classical Philology
+6,10103,Ancient History
+7,10104,Classical Archaeology
+8,10105,Egyptology and Ancient Near Eastern Studies
+9,102,History
+10,10201,Medieval History
+11,10202,Early Modern History
+12,10203,Modern and Current History
+13,10204,History of Science
+14,103,Fine Arts, Music, Theatre and Media Studies
+15,10301,Art History
+16,10302,Musicology
+17,10303,Theatre and Media Studies
+18,104,Linguistics
+19,10401,General and Applied Linguistics
+20,10402,Individual Linguistics
+21,10403,Typology, Non-European Languages, Historical Linguistics
+22,105,Literary Studies
+23,10501,Medieval German Literature
+24,10502,Modern German Literature
+25,10503,European and American Literature
+26,10504,General and Comparative Literature and Cultural Studies
+27,106,Non-European Languages and Cultures, Social and Cultural Anthropology, Jewish Studies and Religious Studies
+28,10601,Social and Cultural Anthropology and Ethnology/Folklore
+29,10602,Asian Studies
+30,10603,African, American and Oceania Studies
+31,10604,Islamic Studies, Arabian Studies, Semitic Studies
+32,10605,Religious Studies and Jewish Studies
+33,107,Theology
+34,10701,Protestant Theology
+35,10702,Roman Catholic Theology
+36,108,Philosophy
+37,10801,History of Philosophy
+38,10802,Theoretical Philosophy
+39,10803,Practical Philosophy
+40,12,Social and Behavioural Sciences
+41,109,Education Sciences
+42,10901,General Education and History of Education
+43,10902,Research on Teaching, Learning and Training
+44,10903,Research on Socialization and Educational Institutions and Professions
+45,110,Psychology
+46,11001,General, Biological and Mathematical Psychology
+47,11002,Developmental and Educational Psychology
+48,11003,Social Psychology, Industrial and Organisational Psychology
+49,11004,Differential Psychology, Clinical Psychology, Medical Psychology, Methodology
+50,111,Social Sciences
+51,11101,Sociological Theory
+52,11102,Empirical Social Research
+53,11103,Communication Science
+54,11104,Political Science
+55,112,Economics
+56,11201,Economic Theory
+57,11202,Economic and Social Policy
+58,11203,Public Finance
+59,11204,Business Administration
+60,11205,Statistics and Econometrics
+61,11206y,Economic and Social History
+62,113,Jurisprudence
+63,11301,Legal and Political Philosophy, Legal History, Legal Theory
+64,11302,Private Law
+65,11303,Public Law
+66,11304,Criminal Law and Law of Criminal Procedure
+67,11305,Criminology
+68,2,Life Sciences
+69,21,Biology
+70,201,Basic Biological and Medical Research
+71,20101,Biochemistry
+72,20102,Biophysics
+73,20103,Cell Biology
+74,20104,Structural Biology
+75,20105,General Genetics
+76,20106,Developmental Biology
+77,20107,Bioinformatics and Theoretical Biology
+78,20108,Anatomy
+79,202,Plant Sciences
+80,20201,Plant Systematics and Evolution
+81,20202,Plant Ecology and Ecosystem Analysis
+82,20203,Inter-organismic Interactions of Plants
+83,20204,Plant Physiology
+84,20205,Plant Biochemistry and Biophysics
+85,20206,Plant Cell and Developmental Biology
+86,20207,Plant Genetics
+87,203,Zoology
+88,20301,Systematics and Morphology
+89,20302,Evolution, Anthropology
+90,20303,Animal Ecology, Biodiversity and Ecosystem Research
+91,20304,Sensory and Behavioural Biology
+92,20305,Biochemistry and Animal Physiology
+93,20306,Animal Genetics, Cell and Developmental Biology
+94,22,Medicine
+95,204,Microbiology, Virology and Immunology
+96,20401,Metabolism, Biochemistry and Genetics of Microorganisms
+97,20402,Microbial Ecology and Applied Microbiology
+98,20403,Medical Microbiology, Molecular Infection Biology
+99,20404,Virology
+100,20405,Immunology
+101,205,Medicine
+102,20501cs,Epidemiology, Medical Biometry, Medical Informatics
+103,20502,Public Health, Health Services Research, Social Medicine
+104,20503,Human Genetics
+105,20504,Physiology
+106,20505,Nutritional Sciences
+107,20506,Pathology and Forensic Medicine
+108,20507,Clinical Chemistry and Pathobiochemistry
+109,20508,Pharmacy
+110,20509,Pharmacology
+111,20510,Toxicology and Occupational Medicine
+112,20511,Anaesthesiology
+113,20512,Cardiology, Angiology
+114,20513,Pneumology, Clinical Infectiology Intensive Care Medicine
+115,20514,Hematology, Oncology, Transfusion Medicine
+116,20515,Gastroenterology, Metabolism
+117,20516,Nephrology
+118,20517,Endocrinology, Diabetology
+119,20518,Rheumatology, Clinical Immunology, Allergology
+120,20519,Dermatology
+121,20520,Pediatric and Adolescent Medicine
+122,20521,Gynaecology and Obstetrics
+123,20522,Reproductive Medicine/Biology
+124,20523,Urology
+125,20524,Gerontology and Geriatric Medicine
+126,20525,Vascular and Visceral Surgery
+127,20526,Cardiothoracic Surgery
+128,20527,Traumatology and Orthopaedics
+129,20528,Dentistry, Oral Surgery
+130,20529,Otolaryngology
+131,20530,Radiology and Nuclear Medicine
+132,20531,Radiation Oncology and Radiobiology
+133,20532,Biomedical Technology and Medical Physics
+134,206,Neurosciences
+135,20601,Molecular Neuroscience and Neurogenetics
+136,20602,Cellular Neuroscience
+137,20603,Developmental Neurobiology
+138,20604,Systemic Neuroscience, Computational Neuroscience, Behaviour
+139,20605,Comparative Neurobiology
+140,20606,Cognitive Neuroscience and Neuroimaging
+141,20607,Molecular Neurology
+142,20608,Clinical Neurosciences I - Neurology, Neurosurgery
+143,20609,Biological Psychiatry
+144,20610,Clinical Neurosciences II - Psychiatry, Psychotherapy, Psychosomatic Medicine
+145,20611,Clinical Neurosciences III - Ophthalmology
+146,23,Agriculture, Forestry, Horticulture and Veterinary Medicine
+147,207,Agriculture, Forestry, Horticulture and Veterinary Medicine
+148,20701,Soil Sciences
+149,20702,Plant Cultivation
+150,20703,Plant Nutrition
+151,20704,Ecology of Agricultural Landscapes
+152,20705,Plant Breeding
+153,20706,Phytomedicine
+154,20707,Agricultural and Food Process Engineering
+155,20708,Agricultural Economics and Sociology
+156,20709,Inventory Control and Use of Forest Resources
+157,20710,Basic Forest Research
+158,20711,Animal Husbandry, Breeding and Hygiene
+159,20712,Animal Nutrition and Nutrition Physiology
+160,20713,Basic Veterinary Medical Science
+161,20714,Basic Research on Pathogenesis, Diagnostics and Therapy and Clinical Veterinary Medicine
+162,3,Natural Sciences
+163,31,Chemistry
+164,301,Molecular Chemistry
+165,30101,Inorganic Molecular Chemistry
+166,30102,Organic Molecular Chemistry
+167,302,Chemical Solid State and Surface Research
+168,30201,Solid State and Surface Chemistry, Material Synthesis
+169,30202,Physical Chemistry of Solids and Surfaces, Material Characterisation
+170,30203,Theory and Modelling
+171,303,Physical and Theoretical Chemistry
+172,30301,Physical Chemistry of Molecules, Interfaces and Liquids - Spectroscopy, Kinetics
+173,30302,General Theoretical Chemistry
+174,304,Analytical Chemistry, Method Development (Chemistry)
+175,30401,Analytical Chemistry, Method Development (Chemistry)
+176,305,Biological Chemistry and Food Chemistry
+177,30501,Biological and Biomimetic Chemistry
+178,30502,Food Chemistry
+179,306,Polymer Research
+180,30601,Preparatory and Physical Chemistry of Polymers
+181,30602,Experimental and Theoretical Physics of Polymers
+182,30603,Polymer Materials
+183,32,Physics
+184,307,Condensed Matter Physics
+185,30701,Experimental Condensed Matter Physics
+186,30702,Theoretical Condensed Matter Physics
+187,308,Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas
+188,30801,Optics, Quantum Optics, Atoms, Molecules, Plasmas
+189,309,Particles, Nuclei and Fields
+190,30901,Particles, Nuclei and Fields
+191,310,Statistical Physics, Soft Matter, Biological Physics, Nonlinear Dynamics
+192,31001,Statistical Physics, Soft Matter, Biological Physics, Nonlinear Dynamics
+193,311,Astrophysics and Astronomy
+194,31101,Astrophysics and Astronomy
+195,33,Mathematics
+196,312,Mathematics
+197,31201,Mathematics
+198,34,Geosciences (including Geography)
+199,313,Atmospheric Science and Oceanography
+200,31301,Atmospheric Science
+201,31302,Oceanography
+202,314,Geology and Palaeontology
+203,31401,Geology and Palaeontology
+204,315,Geophysics and Geodesy
+205,31501,Geophysics
+206,31502,Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartogaphy
+207,316,Geochemistry, Mineralogy and Crystallography
+208,31601,Geochemistry, Mineralogy and Crystallography
+209,317,Geography
+210,31701,Physical Geography
+211,31702,Human Geography
+212,318,Water Research
+213,31801,Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management
+214,4,Engineering Sciences
+215,41,Mechanical and industrial Engineering
+216,401,Production Technology
+217,40101,Metal-Cutting Manufacturing Engineering
+218,40102,Primary Shaping and Reshaping Technology
+219,40103,Micro-, Precision, Mounting, Joining, Separation Technology
+220,40104,Plastics Engineering
+221,40105,Production Automation, Factory Operation, Operations Manangement
+222,402,Mechanics and Constructive Mechanical Engineering
+223,40201,Construction, Machine Elements
+224,40202,Mechanics
+225,40203,Lightweight Construction, Textile Technology
+226,40204,Acoustics
+227,42,Thermal Engineering/Process Engineering
+228,403,Process Engineering, Technical Chemistry
+229,40301,Chemical and Thermal Process Engineering
+230,40302,Technical Chemistry
+231,40303,Mechanical Process Engineering
+232,40304,Biological Process Engineering
+233,404,Heat Energy Technology, Thermal Machines, Fluid Mechanics
+234,40401,Energy Process Engineering
+235,40402,Technical Thermodynamics
+236,40403,Fluid Mechanics
+237,40404,Hydraulic and Turbo Engines and Piston Engines
+238,43,Materials Science and Engineering
+239,405,Materials Engineering
+240,40501,Metallurgical and Thermal Processes, Thermomechanical Treatment of Materials
+241,40502,Sintered Metallic and Ceramic Materials
+242,40503,Composite Materials
+243,40504,Mechanical Behaviour of Construction Materials
+244,40505,Coating and Surface Technology
+245,406,Materials Science
+246,40601,Thermodynamics and Kinetics of Materials
+247,40602,Synthesis and Properties of Functional Materials
+248,40603,Microstructural Mechanical Properties of Materials
+249,40604,Structuring and Functionalisation
+250,40605,Biomaterials
+251,44,Computer Science, Electrical and System Engineering
+252,407,Systems Engineering
+253,40701,Automation, Control Systems, Robotics, Mechatronics
+254,40702,Measurement Systems
+255,40703,Microsystems
+256,40704,Traffic and Transport Systems, Logistics
+257,40705,Human Factors, Ergonomics, Human-Machine Systems
+258,408,Electrical Engineering
+259,40801,Electronic Semiconductors, Components, Circuits, Systems
+260,40802,Communication, High-Frequency and Network Technology, Theoretical Electrical Engineering
+261,40803,Electrical Energy Generation, Distribution, Application
+262,409,Computer Science
+263,40901,Theoretical Computer Science
+264,40902,Software Technology
+265,40903,Operating, Communication and Information Systems
+266,40904,Artificial Intelligence, Image and Language Processing
+267,40905,Computer Architecture and Embedded Systems
+268,45,Construction Engineering and Architecture
+269,410,Construction Engineering and Architecture
+270,41001,Architecture, Building and Construction History, Sustainable Building Technology, Building Design
+271,41002,Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning
+272,41003,Construction Material Sciences, Chemistry, Building Physics
+273,41004,Structural Engineering, Building Informatics, Construction Operation
+274,41005,Applied Mechanics, Statics and Dynamics
+275,41006,Geotechnics, Hydraulic Engineering

@@ -1,0 +1,63 @@
+id,parent,discipline,level1,level2,level3,level4,code
+0,,Academia,0,,,,0
+1,0,Humanities and Social Sciences,1,,,,1
+2,1,Humanities,1,11,,,11
+3,2,Classical Archaeology,1,11,101,04,10104
+4,1,Social and Behavioural Sciences,1,12,,,12
+5,4,Education Sciences,1,12,109,,109
+6,4,Psychology,1,12,110,,110
+7,4,Social Sciences,1,12,111,,111
+8,7,Political Science,1,12,111,04,11104
+9,4,Economics,1,12,112,,112
+10,0,Life Sciences,2,,,,2
+11,10,Biology,2,21,,,21
+12,11,Basic Biological and Medical Research,2,21,201,,201
+13,12,Biochemistry,2,21,201,01,20101
+14,12,Biophysics,2,21,201,02,20102
+15,12,Cell Biology,2,21,201,03,20103
+16,12,Structural Biology,2,21,201,04,20104
+17,12,General Genetics,2,21,201,05,20105
+18,12,Developmental Biology,2,21,201,06,20106
+19,12,Bioinformatics and Theoretical Biology,2,21,201,07,20107
+20,12,Anatomy,2,21,201,08,20108
+21,11,Plant Sciences,2,21,202,,202
+22,11,Zoology,2,21,203,,203
+23,22,"Animal Ecology, Biodiversity and Ecosystem Research",2,21,203,03,20303
+24,10,Medicine,2,22,,,22
+25,24,"Microbiology, Virology and Immunology",2,22,204,,204
+26,25,Microbial Ecology and Applied Microbiology,2,22,204,02,20402
+27,25,"Epidemiology, Medical Biometry, Medical Informatics",2,22,205,01,20501
+28,24,Neurosciences,2,22,206,,206
+29,10,"Agriculture, Forestry, Horticulture and Veterinary Medicine",2,23,,,23
+30,29,"Agriculture, Forestry, Horticulture and Veterinary Medicine",2,23,207,,207
+31,30,Soil Sciences,2,23,207,01,20701
+32,30,Basic Forest Research,2,23,207,10,20710
+33,0,Natural Sciences,3,,,,3
+34,33,Chemistry,3,31,,,31
+35,33,Physics,3,32,,,32
+36,35,Astrophysics and Astronomy,3,32,311,,311
+37,33,Mathematics,3,33,312,,312
+38,33,Geosciences (including Geography),3,34,,,34
+39,38,Atmospheric Science,3,34,313,01,31301
+40,38,Oceanography,3,34,313,02,31302
+41,38,Geology and Palaeontology,3,34,314,,314
+42,38,Geophysics,3,34,315,01,31501
+43,38,"Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartogaphy",3,34,315,02,31502
+44,38,"Geochemistry, Mineralogy and Crystallography",3,34,316,,316
+45,38,Geography,3,34,317,,317
+46,45,Physical Geography,3,34,317,01,31701
+47,45,Human Geography,3,34,317,02,31702
+48,38,Water Research,3,34,318,,318
+49,48,"Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management",3,34,318,01,31801
+50,0,Engineering Sciences,4,,,,4
+51,50,Materials Science and Engineering,4,43,,,43
+52,51,Materials Engineering,4,43,405,,405
+53,51,Materials Science,4,43,406,,406
+54,50,"Computer Science, Electrical and System Engineering",4,44,,,44
+55,54,Systems Engineering,4,44,407,,407
+56,54,Electrical Engineering,4,44,408,,408
+57,54,Computer Science,4,44,409,,409
+58,57,Software Technology,4,44,409,02,40902
+59,57,"Operating, Communication and Information Systems",4,44,409,03,40903
+60,57,"Artificial Intelligence, Image and Language Processing",4,44,409,04,40904
+61,57,Computer Architecture and Embedded Systems,4,44,409,05,40905

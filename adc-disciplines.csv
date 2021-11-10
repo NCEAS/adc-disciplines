@@ -61,3 +61,7 @@ id,parent,discipline,level1,level2,level3,level4,code
 59,57,"Operating, Communication and Information Systems",4,44,409,03,40903
 60,57,"Artificial Intelligence, Image and Language Processing",4,44,409,04,40904
 61,57,Computer Architecture and Embedded Systems,4,44,409,05,40905
+62,54,Cyberinfrastructure,4,44,409,06,40906
+63,50,Data science,4,44,409,07,40907
+64,9,Statistics and Econometrics,1,12,112,05,11205
+65,2,Social and Cultural Anthropology and Ethnology/Folklore,1,10,106,06,10601

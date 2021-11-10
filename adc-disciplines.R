@@ -25,13 +25,13 @@ nodes <- dfg %>%
   mutate(subject=if_else(is.na(level2), level1, level2, level1)) %>% 
   mutate(subject=if_else(subject<10, subject*10, subject)) %>% 
   mutate(name=trimws(name, which="both")) %>% 
-  select(id, name, subject) %>% n
+  select(id, name, subject) %>%
   distinct()
 
 # Create the graph using igraph
 discipline_graph <- graph_from_data_frame(edges, vertices=nodes)
 
-# Basic discipline tree plottted
+# Basic discipline tree plotted
 ggraph(discipline_graph, layout = 'dendrogram', circular = FALSE) + 
   geom_edge_diagonal() +
   geom_node_point() +

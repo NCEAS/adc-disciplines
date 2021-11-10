@@ -19,7 +19,7 @@ dfg <- vroom("adc-disciplines.csv") %>%
   mutate(discipline=if_else(discipline=="Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartogaphy", "Geodesy", discipline)) %>% 
   rename(name=discipline, dfg_code=code)
 
-# Create edge list and nodelist from the DFG taxonomy, and set the subject to a discpline-related value
+# Create edge list and nodelist from the DFG taxonomy, and set the subject to a discipline-related value
 edges <- dfg %>% select(parent, id) %>% filter(id!=0)
 nodes <- dfg %>% 
   mutate(subject=if_else(is.na(level2), level1, level2, level1)) %>% 

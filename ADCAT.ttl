@@ -14,8 +14,8 @@ odo:ADCAT_
     terms:description "Ontology to support annotation of datasets housed at the Arctic Data Center (https://arcticdata.io)" ;
     terms:license <https://creativecommons.org/licenses/by/4.0/> ;
     terms:title "Arctic Data Center Annotation Terms Ontology (ADCAT)" ;
-    owl:versionIRI <ADCAT/0.1.0> ;
-    owl:versionInfo "Version 0.1.0" ;
+    owl:versionIRI <ADCAT/0.2.0> ;
+    owl:versionInfo "Version 0.2.0" ;
     <rdf:type> owl:Ontology .
 
 odo:ADCAT_00000

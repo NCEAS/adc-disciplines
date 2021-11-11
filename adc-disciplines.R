@@ -83,11 +83,11 @@ create_ontology <- function(graph_, namespaces, prefix) {
   rdf_add(graph_, 
           subject=onto_id,
           predicate=paste0(namespaces$owl, "versionIRI"),
-          object=paste0(namespaces$odo, prefix, "/0.1.0"))
+          object=paste0(namespaces$odo, prefix, "/0.2.0"))
   rdf_add(graph_, 
           subject=onto_id,
           predicate=paste0(namespaces$owl, "versionInfo"),
-          object="Version 0.1.0")
+          object="Version 0.2.0")
   rdf_add(graph_, 
           subject=onto_id,
           predicate=paste0(namespaces$terms, "description"),

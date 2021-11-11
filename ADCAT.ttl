@@ -18,46 +18,46 @@ odo:ADCAT_
     owl:versionInfo "Version 0.1.0" ;
     <rdf:type> owl:Ontology .
 
-<ADCAT_000\u00200>
+odo:ADCAT_00000
     a owl:Class ;
     rdfs:label "Academic Discipline" .
 
-<ADCAT_000\u00201>
+odo:ADCAT_00001
     a owl:Class ;
     rdfs:label "Humanities and Social Sciences" ;
     rdfs:subClassOf odo:ADCAT_00000 .
 
-<ADCAT_000\u00202>
+odo:ADCAT_00002
     a owl:Class ;
     rdfs:label "Humanities" ;
     rdfs:subClassOf odo:ADCAT_00001 .
 
-<ADCAT_000\u00203>
+odo:ADCAT_00003
     a owl:Class ;
     rdfs:label "Archaeology" ;
     rdfs:subClassOf odo:ADCAT_00002 .
 
-<ADCAT_000\u00204>
+odo:ADCAT_00004
     a owl:Class ;
     rdfs:label "Social Sciences" ;
     rdfs:subClassOf odo:ADCAT_00001 .
 
-<ADCAT_000\u00205>
+odo:ADCAT_00005
     a owl:Class ;
     rdfs:label "Education Sciences" ;
     rdfs:subClassOf odo:ADCAT_00004 .
 
-<ADCAT_000\u00206>
+odo:ADCAT_00006
     a owl:Class ;
     rdfs:label "Psychology" ;
     rdfs:subClassOf odo:ADCAT_00004 .
 
-<ADCAT_000\u00208>
+odo:ADCAT_00008
     a owl:Class ;
     rdfs:label "Political Science" ;
     rdfs:subClassOf odo:ADCAT_00004 .
 
-<ADCAT_000\u00209>
+odo:ADCAT_00009
     a owl:Class ;
     rdfs:label "Economics" ;
     rdfs:subClassOf odo:ADCAT_00004 .

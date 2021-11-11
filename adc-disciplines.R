@@ -48,7 +48,7 @@ ggsave("adc-disciplines.png", width=12)
 
 create_class <- function(row, graph_, namespaces, prefix) {
   print(paste0("Processing: ", row[[3]]))
-  class_id  <- paste0(namespaces$odo, sprintf("%s_%05s", prefix, row[[1]]))
+  class_id  <- paste0(namespaces$odo, sprintf("%s_%05d", prefix, as.numeric(row[[1]])))
   graph_ <- rdf_add(graph_, 
                    subject=class_id,
                    predicate=paste0(namespaces$rdf, "type"),

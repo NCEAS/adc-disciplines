@@ -1,0 +1,339 @@
+@base <https://purl.dataone.org/odo/ADCAT_> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix odo: <.> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+odo:ADCAT_
+    terms:created "2021-11-10"^^xsd:date ;
+    terms:creator <https://orcid.org/0000-0003-0077-4738> ;
+    terms:description "Ontology to support annotation of datasets housed at the Arctic Data Center (https://arcticdata.io)" ;
+    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    terms:title "Arctic Data Center Annotation Terms Ontology (ADCAT)" ;
+    owl:versionIRI <ADCAT/0.1.0> ;
+    owl:versionInfo "Version 0.1.0" ;
+    <rdf:type> owl:Ontology .
+
+<ADCAT_000\u00200>
+    a owl:Class ;
+    rdfs:label "Academic Discipline" .
+
+<ADCAT_000\u00201>
+    a owl:Class ;
+    rdfs:label "Humanities and Social Sciences" ;
+    rdfs:subClassOf odo:ADCAT_00000 .
+
+<ADCAT_000\u00202>
+    a owl:Class ;
+    rdfs:label "Humanities" ;
+    rdfs:subClassOf odo:ADCAT_00001 .
+
+<ADCAT_000\u00203>
+    a owl:Class ;
+    rdfs:label "Archaeology" ;
+    rdfs:subClassOf odo:ADCAT_00002 .
+
+<ADCAT_000\u00204>
+    a owl:Class ;
+    rdfs:label "Social Sciences" ;
+    rdfs:subClassOf odo:ADCAT_00001 .
+
+<ADCAT_000\u00205>
+    a owl:Class ;
+    rdfs:label "Education Sciences" ;
+    rdfs:subClassOf odo:ADCAT_00004 .
+
+<ADCAT_000\u00206>
+    a owl:Class ;
+    rdfs:label "Psychology" ;
+    rdfs:subClassOf odo:ADCAT_00004 .
+
+<ADCAT_000\u00208>
+    a owl:Class ;
+    rdfs:label "Political Science" ;
+    rdfs:subClassOf odo:ADCAT_00004 .
+
+<ADCAT_000\u00209>
+    a owl:Class ;
+    rdfs:label "Economics" ;
+    rdfs:subClassOf odo:ADCAT_00004 .
+
+odo:ADCAT_00010
+    a owl:Class ;
+    rdfs:label "Life Sciences" ;
+    rdfs:subClassOf odo:ADCAT_00000 .
+
+odo:ADCAT_00011
+    a owl:Class ;
+    rdfs:label "Biology" ;
+    rdfs:subClassOf odo:ADCAT_00010 .
+
+odo:ADCAT_00013
+    a owl:Class ;
+    rdfs:label "Biochemistry" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00014
+    a owl:Class ;
+    rdfs:label "Biophysics" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00015
+    a owl:Class ;
+    rdfs:label "Cell Biology" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00016
+    a owl:Class ;
+    rdfs:label "Structural Biology" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00017
+    a owl:Class ;
+    rdfs:label "General Genetics" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00018
+    a owl:Class ;
+    rdfs:label "Developmental Biology" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00019
+    a owl:Class ;
+    rdfs:label "Bioinformatics and Theoretical Biology" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00020
+    a owl:Class ;
+    rdfs:label "Anatomy" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00021
+    a owl:Class ;
+    rdfs:label "Plant Sciences" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00022
+    a owl:Class ;
+    rdfs:label "Zoology" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00023
+    a owl:Class ;
+    rdfs:label "Ecology, Biodiversity and Ecosystems" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+
+odo:ADCAT_00024
+    a owl:Class ;
+    rdfs:label "Medicine" ;
+    rdfs:subClassOf odo:ADCAT_00010 .
+
+odo:ADCAT_00025
+    a owl:Class ;
+    rdfs:label "Microbiology" ;
+    rdfs:subClassOf odo:ADCAT_00024 .
+
+odo:ADCAT_00026
+    a owl:Class ;
+    rdfs:label "Microbial Ecology and Applied Microbiology" ;
+    rdfs:subClassOf odo:ADCAT_00025 .
+
+odo:ADCAT_00027
+    a owl:Class ;
+    rdfs:label "Epidemiology" ;
+    rdfs:subClassOf odo:ADCAT_00025 .
+
+odo:ADCAT_00028
+    a owl:Class ;
+    rdfs:label "Neurosciences" ;
+    rdfs:subClassOf odo:ADCAT_00024 .
+
+odo:ADCAT_00029
+    a owl:Class ;
+    rdfs:label "Agricultural Sciences" ;
+    rdfs:subClassOf odo:ADCAT_00010 .
+
+odo:ADCAT_00030
+    a owl:Class ;
+    rdfs:label "Agricultural Research" ;
+    rdfs:subClassOf odo:ADCAT_00029 .
+
+odo:ADCAT_00031
+    a owl:Class ;
+    rdfs:label "Soil Sciences" ;
+    rdfs:subClassOf odo:ADCAT_00029 .
+
+odo:ADCAT_00032
+    a owl:Class ;
+    rdfs:label "Forest Research" ;
+    rdfs:subClassOf odo:ADCAT_00029 .
+
+odo:ADCAT_00033
+    a owl:Class ;
+    rdfs:label "Natural Sciences" ;
+    rdfs:subClassOf odo:ADCAT_00000 .
+
+odo:ADCAT_00034
+    a owl:Class ;
+    rdfs:label "Chemistry" ;
+    rdfs:subClassOf odo:ADCAT_00033 .
+
+odo:ADCAT_00035
+    a owl:Class ;
+    rdfs:label "Physics" ;
+    rdfs:subClassOf odo:ADCAT_00033 .
+
+odo:ADCAT_00036
+    a owl:Class ;
+    rdfs:label "Astronomy" ;
+    rdfs:subClassOf odo:ADCAT_00033 .
+
+odo:ADCAT_00037
+    a owl:Class ;
+    rdfs:label "Mathematics" ;
+    rdfs:subClassOf odo:ADCAT_00033 .
+
+odo:ADCAT_00038
+    a owl:Class ;
+    rdfs:label "Geosciences" ;
+    rdfs:subClassOf odo:ADCAT_00033 .
+
+odo:ADCAT_00039
+    a owl:Class ;
+    rdfs:label "Atmospheric Science" ;
+    rdfs:subClassOf odo:ADCAT_00038 .
+
+odo:ADCAT_00040
+    a owl:Class ;
+    rdfs:label "Oceanography" ;
+    rdfs:subClassOf odo:ADCAT_00038 .
+
+odo:ADCAT_00041
+    a owl:Class ;
+    rdfs:label "Geology and Palaeontology" ;
+    rdfs:subClassOf odo:ADCAT_00038 .
+
+odo:ADCAT_00042
+    a owl:Class ;
+    rdfs:label "Geophysics" ;
+    rdfs:subClassOf odo:ADCAT_00038 .
+
+odo:ADCAT_00043
+    a owl:Class ;
+    rdfs:label "Geodesy" ;
+    rdfs:subClassOf odo:ADCAT_00038 .
+
+odo:ADCAT_00044
+    a owl:Class ;
+    rdfs:label "Geochemistry, Mineralogy and Crystallography" ;
+    rdfs:subClassOf odo:ADCAT_00038 .
+
+odo:ADCAT_00045
+    a owl:Class ;
+    rdfs:label "Geography" ;
+    rdfs:subClassOf odo:ADCAT_00038 .
+
+odo:ADCAT_00046
+    a owl:Class ;
+    rdfs:label "Physical Geography" ;
+    rdfs:subClassOf odo:ADCAT_00045 .
+
+odo:ADCAT_00047
+    a owl:Class ;
+    rdfs:label "Human Geography" ;
+    rdfs:subClassOf odo:ADCAT_00045 .
+
+odo:ADCAT_00049
+    a owl:Class ;
+    rdfs:label "Hydrology, Limnology, and Water Chemistry" ;
+    rdfs:subClassOf odo:ADCAT_00038 .
+
+odo:ADCAT_00050
+    a owl:Class ;
+    rdfs:label "Engineering Sciences" ;
+    rdfs:subClassOf odo:ADCAT_00000 .
+
+odo:ADCAT_00051
+    a owl:Class ;
+    rdfs:label "Materials Science and Engineering" ;
+    rdfs:subClassOf odo:ADCAT_00050 .
+
+odo:ADCAT_00052
+    a owl:Class ;
+    rdfs:label "Materials Engineering" ;
+    rdfs:subClassOf odo:ADCAT_00051 .
+
+odo:ADCAT_00053
+    a owl:Class ;
+    rdfs:label "Materials Science" ;
+    rdfs:subClassOf odo:ADCAT_00051 .
+
+odo:ADCAT_00054
+    a owl:Class ;
+    rdfs:label "CS & ESE" ;
+    rdfs:subClassOf odo:ADCAT_00050 .
+
+odo:ADCAT_00055
+    a owl:Class ;
+    rdfs:label "Systems Engineering" ;
+    rdfs:subClassOf odo:ADCAT_00054 .
+
+odo:ADCAT_00056
+    a owl:Class ;
+    rdfs:label "Electrical Engineering" ;
+    rdfs:subClassOf odo:ADCAT_00054 .
+
+odo:ADCAT_00057
+    a owl:Class ;
+    rdfs:label "Computer Science" ;
+    rdfs:subClassOf odo:ADCAT_00054 .
+
+odo:ADCAT_00058
+    a owl:Class ;
+    rdfs:label "Software Technology" ;
+    rdfs:subClassOf odo:ADCAT_00057 .
+
+odo:ADCAT_00059
+    a owl:Class ;
+    rdfs:label "Operating, Communication and Information Systems" ;
+    rdfs:subClassOf odo:ADCAT_00057 .
+
+odo:ADCAT_00060
+    a owl:Class ;
+    rdfs:label "Artificial Intelligence" ;
+    rdfs:subClassOf odo:ADCAT_00057 .
+
+odo:ADCAT_00061
+    a owl:Class ;
+    rdfs:label "Computer Architecture and Embedded Systems" ;
+    rdfs:subClassOf odo:ADCAT_00057 .
+
+odo:ADCAT_00062
+    a owl:Class ;
+    rdfs:label "Cyberinfrastructure" ;
+    rdfs:subClassOf odo:ADCAT_00054 .
+
+odo:ADCAT_00063
+    a owl:Class ;
+    rdfs:label "Data science" ;
+    rdfs:subClassOf odo:ADCAT_00050 .
+
+odo:ADCAT_00064
+    a owl:Class ;
+    rdfs:label "Statistics" ;
+    rdfs:subClassOf odo:ADCAT_00004 .
+
+odo:ADCAT_00065
+    a owl:Class ;
+    rdfs:label "Anthropology and Ethnology" ;
+    rdfs:subClassOf odo:ADCAT_00002 .
+
+odo:ADCAT_00066
+    a owl:Class ;
+    rdfs:label "Evolution" ;
+    rdfs:subClassOf odo:ADCAT_00011 .
+

@@ -9,14 +9,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 odo:ADCAT_
-    terms:created "2021-11-10"^^xsd:date ;
+    terms:created "2021-11-15"^^xsd:date ;
     terms:creator <https://orcid.org/0000-0003-0077-4738> ;
     terms:description "Ontology to support annotation of datasets housed at the Arctic Data Center (https://arcticdata.io)" ;
     terms:license <https://creativecommons.org/licenses/by/4.0/> ;
     terms:title "Arctic Data Center Annotation Terms Ontology (ADCAT)" ;
+    a owl:Ontology ;
     owl:versionIRI <ADCAT/0.2.0> ;
-    owl:versionInfo "Version 0.2.0" ;
-    <rdf:type> owl:Ontology .
+    owl:versionInfo "Version 0.2.0" .
 
 odo:ADCAT_00000
     a owl:Class ;

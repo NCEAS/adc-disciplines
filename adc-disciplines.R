@@ -78,7 +78,7 @@ create_ontology <- function(graph_, namespaces, prefix) {
   onto_id  <- paste0(namespaces$odo, sprintf("%s_", prefix))
   rdf_add(graph_, 
           subject=onto_id,
-          predicate="rdf:type",
+          predicate=paste0(namespaces$rdf, "type"),
           object=paste0(namespaces$owl, "Ontology"))
   rdf_add(graph_, 
           subject=onto_id,

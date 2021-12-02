@@ -1,65 +1,60 @@
 id,parent,discipline,level1,level2,level3,level4,code
 0,,Academic Discipline,0,,,,0
-1,0,Humanities and Social Sciences,1,,,,1
-2,1,Humanities,1,11,,,11
-3,2,Archaeology,1,11,101,04,10104
-4,1,Social and Behavioral Sciences,1,12,,,12
-5,4,Education Sciences,1,12,109,,109
+3,4,Archaeology,1,11,101,04,10104
+4,0,Social Science,1,12,,,12
+5,4,Education,1,12,109,,109
 6,4,Psychology,1,12,110,,110
 8,4,Political Science,1,12,111,04,11104
 9,4,Economics,1,12,112,,112
-10,0,Life Sciences,2,,,,2
+10,67,Life Science,2,,,,2
 11,10,Biology,2,21,,,21
 13,11,Biochemistry,2,21,201,01,20101
 14,11,Biophysics,2,21,201,02,20102
 15,11,Cell Biology,2,21,201,03,20103
 16,11,Structural Biology,2,21,201,04,20104
-17,11,General Genetics,2,21,201,05,20105
+17,11,Genetics,2,21,201,05,20105
 18,11,Developmental Biology,2,21,201,06,20106
-19,11,Bioinformatics and Theoretical Biology,2,21,201,07,20107
+19,11,Bioinformatics,2,21,201,07,20107
 20,11,Anatomy,2,21,201,08,20108
-21,11,Plant Sciences,2,21,202,,202
+21,11,Plant Science,2,21,202,,202
 22,11,Zoology,2,21,203,,203
-23,11,"Ecology, Biodiversity and Ecosystems",2,21,203,03,20303
+23,11,"Ecology and Biodiversity",2,21,203,03,20303
 24,10,Medicine,2,22,,,22
-25,24,"Microbiology, Virology and Immunology",2,22,204,,204
-26,25,Microbial Ecology and Applied Microbiology,2,22,204,02,20402
-27,25,"Epidemiology, Medical Biometry, Medical Informatics",2,22,205,01,20501
-28,24,Neurosciences,2,22,206,,206
-29,10,"Agriculture, Forestry, and Veterinary Medicine",2,23,,,23
+25,11,Microbiology,2,22,204,,204
+27,11,Epidemiology,2,22,205,01,20501
+28,11,Neuroscience,2,22,206,,206
+29,10,"Agricultural Science",2,23,,,23
 30,29,Agricultural Research,2,23,207,,207
-31,29,Soil Sciences,2,23,207,01,20701
+31,29,Soil Science,2,23,207,01,20701
 32,29,Forest Research,2,23,207,10,20710
-33,0,Natural Sciences,3,,,,3
+33,67,Physical Science,3,,,,3
 34,33,Chemistry,3,31,,,31
 35,33,Physics,3,32,,,32
 36,33,Astronomy,3,32,311,,311
-37,33,Mathematics,3,33,312,,312
-38,33,Geosciences (including Geography),3,34,,,34
+37,68,Mathematics,5,51,,,
+38,33,Geoscience,3,34,,,34
 39,38,Atmospheric Science,3,34,313,01,31301
 40,38,Oceanography,3,34,313,02,31302
-41,38,Geology and Palaeontology,3,34,314,,314
+41,38,Geology,3,34,314,,314
 42,38,Geophysics,3,34,315,01,31501
-43,38,"Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartogaphy",3,34,315,02,31502
-44,38,"Geochemistry, Mineralogy and Crystallography",3,34,316,,316
+43,38,"Geodesy",3,34,315,02,31502
+44,38,"Geochemistry",3,34,316,,316
 45,38,Geography,3,34,317,,317
-46,45,Physical Geography,3,34,317,01,31701
-47,45,Human Geography,3,34,317,02,31702
-49,38,"Hydrology, Limnology, and Water Chemistry",3,34,318,01,31801
-50,0,Engineering Sciences,4,,,,4
-51,50,Materials Science and Engineering,4,43,,,43
-52,51,Materials Engineering,4,43,405,,405
-53,51,Materials Science,4,43,406,,406
-54,50,"Computer Science, Electrical and System Engineering",4,44,,,44
-55,54,Systems Engineering,4,44,407,,407
-56,54,Electrical Engineering,4,44,408,,408
-57,54,Computer Science,4,44,409,,409
-58,57,Software Technology,4,44,409,02,40902
-59,57,"Operating, Communication and Information Systems",4,44,409,03,40903
-60,57,"Artificial Intelligence, Image and Language Processing",4,44,409,04,40904
-61,57,Computer Architecture and Embedded Systems,4,44,409,05,40905
-62,54,Cyberinfrastructure,4,44,409,06,40906
-63,50,Data science,4,44,409,07,40907
-64,4,Statistics,1,12,112,05,11205
-65,2,Anthropology and Ethnology,1,10,106,06,10601
+49,38,Hydrology,3,34,318,01,31801
+50,0,Engineering,4,,,,4
+52,50,Materials Engineering,4,43,405,,405
+53,50,Materials Science,4,43,406,,406
+55,50,Systems Engineering,4,44,407,,407
+56,50,Electrical Engineering,4,44,408,,408
+57,68,Computer Science,5,53,,,
+58,50,Software Engineering,4,44,409,02,40902
+62,50,Cyberinfrastructure,4,44,409,06,40906
+63,68,Data science,5,54,,,
+64,68,Statistics,5,52,,,
+65,4,Anthropology,1,10,106,06,10601
 66,11,Evolution,2,21,201,09,20109
+67,0,Natural Science,3,,,,3
+68,0,Formal Science,5,,,,5
+69,38,Palaeontology,3,34,314,,314
+70,11,Theoretical Biology,2,21,,,20107
+71,4,Ethnology,1,10,106,06,10601

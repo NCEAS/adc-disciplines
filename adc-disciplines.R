@@ -8,18 +8,8 @@ library(rdflib)
 
 # Load the default categories from DFG, but simplify some labels
 dfg <- vroom("adc-disciplines.csv", show_col_types = FALSE) %>%
-  mutate(discipline=if_else(discipline=="Agriculture, Forestry, and Veterinary Medicine", "Agricultural Sciences", discipline)) %>% 
-  mutate(discipline=if_else(discipline=="Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management", "Hydrology", discipline)) %>% 
-  mutate(discipline=if_else(discipline=="Computer Science, Electrical and System Engineering", "CS & ESE", discipline)) %>% 
-  mutate(discipline=if_else(discipline=="Epidemiology, Medical Biometry, Medical Informatics", "Epidemiology", discipline)) %>% 
-  mutate(discipline=if_else(discipline=="Artificial Intelligence, Image and Language Processing", "Artificial Intelligence", discipline)) %>% 
-  mutate(discipline=if_else(discipline=="Microbiology, Virology and Immunology", "Microbiology", discipline)) %>% 
-  mutate(discipline=if_else(discipline=="Geosciences (including Geography)", "Geosciences", discipline)) %>% 
-  mutate(discipline=if_else(discipline=="Basic Biological and Medical Research", "Basic Biology", discipline)) %>% 
-  mutate(discipline=if_else(discipline=="Social and Behavioral Sciences", "Social Sciences", discipline)) %>% 
-  mutate(discipline=if_else(discipline=="Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartogaphy", "Geodesy", discipline)) %>% 
   rename(name=discipline, dfg_code=code) %>% 
-  arrange(level1, level2, name)
+  arrange(level1, parent, name)
 
 # Create edge list and nodelist from the DFG taxonomy, and set the subject to a discipline-related value
 edges <- dfg %>% select(parent, id) %>% filter(id!=0)
@@ -73,8 +63,7 @@ create_class <- function(row, graph_, namespaces, prefix) {
   return(length(graph_))
 }
 
-create_ontology <- function(graph_, namespaces, prefix) {
-
+create_ontology <- function(graph_, namespaces, prefix, release) {
   onto_id  <- paste0(namespaces$odo, sprintf("%s_", prefix))
   rdf_add(graph_, 
           subject=onto_id,
@@ -83,11 +72,11 @@ create_ontology <- function(graph_, namespaces, prefix) {
   rdf_add(graph_, 
           subject=onto_id,
           predicate=paste0(namespaces$owl, "versionIRI"),
-          object=paste0(namespaces$odo, prefix, "/0.2.0"))
+          object=paste0(namespaces$odo, prefix, "/", release))
   rdf_add(graph_, 
           subject=onto_id,
           predicate=paste0(namespaces$owl, "versionInfo"),
-          object="Version 0.2.0")
+          object=paste0("Version ", release))
   rdf_add(graph_, 
           subject=onto_id,
           predicate=paste0(namespaces$terms, "description"),
@@ -113,6 +102,7 @@ create_ontology <- function(graph_, namespaces, prefix) {
 
 create_rdf <- function(dfg) {
   prefix <- "ADCAT"
+  release <- '0.3.0'
   namespaces <- list(
     odo="https://purl.dataone.org/odo/",
     dc="http://purl.org/dc/elements/1.1/",
@@ -125,7 +115,7 @@ create_rdf <- function(dfg) {
     xsd="http://www.w3.org/2001/XMLSchema#"
   )
   graph <- rdf()
-  create_ontology(graph, namespaces, prefix)
+  create_ontology(graph, namespaces, prefix, release)
   graph_sizes <- apply(dfg, 1, create_class, graph, namespaces, prefix)
   rdf_serialize(graph, paste0(prefix, ".ttl"), base="https://purl.dataone.org/odo/ADCAT_", format="turtle", namespace=unlist(namespaces))
   return(graph)

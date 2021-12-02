@@ -58,3 +58,8 @@ id,parent,discipline,level1,level2,level3,level4,code
 69,38,Palaeontology,3,34,314,,314
 70,11,Theoretical Biology,2,21,,,20107
 71,4,Ethnology,1,10,106,06,10601
+72,50,Chemical Engineering,4,44,,,
+73,50,Civil Engineering,4,44,,,
+74,50,Mechanical Engineering,4,44,,,
+75,68,Logic,5,54,,,
+

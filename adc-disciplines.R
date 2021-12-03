@@ -5,9 +5,10 @@ library(stringr)
 library(ggraph)
 library(scico)
 library(rdflib)
+library(tidyr)
 
 # Load the default categories from DFG, but simplify some labels
-dfg <- vroom("adc-disciplines.csv", show_col_types = FALSE) %>%
+dfg <- vroom("adc-disciplines.csv", col_types="ddcdddddcc", show_col_types = FALSE) %>%
   rename(name=discipline, dfg_code=code) %>% 
   arrange(level1, parent, name)
 
@@ -53,6 +54,20 @@ create_class <- function(row, graph_, namespaces, prefix) {
                       subject=class_id,
                       predicate=paste0(namespaces$rdfs, "subClassOf"),
                       object=parent_id)  
+  }
+  if (!is.na(row[[9]])) {
+    plos_uri <- paste0(namespaces$plos, row[[9]])
+    graph_ <- rdf_add(graph_, 
+                      subject=class_id,
+                      predicate=paste0(namespaces$owl, "sameAs"),
+                      object=plos_uri)  
+  }
+  if (!is.na(row[[10]])) {
+    wikidata_uri <- paste0(namespaces$wikidata, row[[10]])
+    graph_ <- rdf_add(graph_, 
+                      subject=class_id,
+                      predicate=paste0(namespaces$owl, "sameAs"),
+                      object=wikidata_uri)  
   }
   
   # TODO Add additional class metadata
@@ -112,7 +127,9 @@ create_rdf <- function(dfg) {
     rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     rdfs="http://www.w3.org/2000/01/rdf-schema#",
     terms="http://purl.org/dc/terms/",
-    xsd="http://www.w3.org/2001/XMLSchema#"
+    xsd="http://www.w3.org/2001/XMLSchema#",
+    plos="http://localhost/plosthes.2017-1#",
+    wikidata="https://www.wikidata.org/wiki/"
   )
   graph <- rdf()
   create_ontology(graph, namespaces, prefix, release)
@@ -125,4 +142,16 @@ options(rdf_print_format = "turtle")
 options(rdf_max_print = 10000)
 graph <- create_rdf(dfg)
 
-
+# load_plos <- function() {
+#   plos <- PLOSTHES %>% 
+#     select('Class ID', 
+#            'http://www.w3.org/2004/02/skos/core#prefLabel', 
+#            'http://www.w3.org/2004/02/skos/core#broader', 
+#            'http://www.w3.org/2004/02/skos/core#narrower') %>% 
+#     rename(term_uri='Class ID', 
+#            prefLabel='http://www.w3.org/2004/02/skos/core#prefLabel', 
+#            broader='http://www.w3.org/2004/02/skos/core#broader', 
+#            narrower='http://www.w3.org/2004/02/skos/core#narrower') %>% 
+#     separate(term_uri, c("ns", "plos_id"), sep="#", remove=FALSE) %>% 
+#     select(-ns)
+# }

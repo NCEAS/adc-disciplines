@@ -7,6 +7,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix plos: <http://localhost/plosthes.2017-1#> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
 
 odo:ADCAT_
     terms:created "2021-12-02"^^xsd:date ;
@@ -20,57 +22,68 @@ odo:ADCAT_
 
 odo:ADCAT_00000
     a owl:Class ;
-    rdfs:label "Academic Discipline" .
+    rdfs:label "Academic Discipline" ;
+    owl:sameAs wikidata:Q11862829 .
 
 odo:ADCAT_00003
     a owl:Class ;
     rdfs:label "Archaeology" ;
-    rdfs:subClassOf odo:ADCAT_00004 .
+    rdfs:subClassOf odo:ADCAT_00004 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#2668> .
 
 odo:ADCAT_00004
     a owl:Class ;
     rdfs:label "Social Science" ;
-    rdfs:subClassOf odo:ADCAT_00000 .
+    rdfs:subClassOf odo:ADCAT_00000 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#8539>, wikidata:Q34749 .
 
 odo:ADCAT_00005
     a owl:Class ;
     rdfs:label "Education" ;
-    rdfs:subClassOf odo:ADCAT_00004 .
+    rdfs:subClassOf odo:ADCAT_00004 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#4484> .
 
 odo:ADCAT_00006
     a owl:Class ;
     rdfs:label "Psychology" ;
-    rdfs:subClassOf odo:ADCAT_00004 .
+    rdfs:subClassOf odo:ADCAT_00004 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#6810>, wikidata:Q9418 .
 
 odo:ADCAT_00008
     a owl:Class ;
     rdfs:label "Political Science" ;
-    rdfs:subClassOf odo:ADCAT_00004 .
+    rdfs:subClassOf odo:ADCAT_00004 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#3078> .
 
 odo:ADCAT_00009
     a owl:Class ;
     rdfs:label "Economics" ;
-    rdfs:subClassOf odo:ADCAT_00004 .
+    rdfs:subClassOf odo:ADCAT_00004 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#1> .
 
 odo:ADCAT_00010
     a owl:Class ;
     rdfs:label "Life Science" ;
-    rdfs:subClassOf odo:ADCAT_00067 .
+    rdfs:subClassOf odo:ADCAT_00067 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#3625>, wikidata:Q864928 .
 
 odo:ADCAT_00013
     a owl:Class ;
     rdfs:label "Biochemistry" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#2243> .
 
 odo:ADCAT_00014
     a owl:Class ;
     rdfs:label "Biophysics" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#1443> .
 
 odo:ADCAT_00015
     a owl:Class ;
     rdfs:label "Cell Biology" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#1352> .
 
 odo:ADCAT_00016
     a owl:Class ;
@@ -80,147 +93,170 @@ odo:ADCAT_00016
 odo:ADCAT_00017
     a owl:Class ;
     rdfs:label "Genetics" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#6195>, wikidata:Q7162 .
 
 odo:ADCAT_00018
     a owl:Class ;
     rdfs:label "Developmental Biology" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#4415> .
 
 odo:ADCAT_00019
     a owl:Class ;
     rdfs:label "Bioinformatics" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#3739> .
 
 odo:ADCAT_00020
     a owl:Class ;
     rdfs:label "Anatomy" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#1761> .
 
 odo:ADCAT_00021
     a owl:Class ;
     rdfs:label "Plant Science" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#6638> .
 
 odo:ADCAT_00022
     a owl:Class ;
     rdfs:label "Zoology" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#5402> .
 
 odo:ADCAT_00023
     a owl:Class ;
     rdfs:label "Ecology and Biodiversity" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#10424> .
 
 odo:ADCAT_00025
     a owl:Class ;
     rdfs:label "Microbiology" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#3803> .
 
 odo:ADCAT_00027
     a owl:Class ;
     rdfs:label "Epidemiology" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#8910> .
 
 odo:ADCAT_00028
     a owl:Class ;
     rdfs:label "Neuroscience" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
-
-odo:ADCAT_00029
-    a owl:Class ;
-    rdfs:label "Agricultural Science" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#3301> .
 
 odo:ADCAT_00030
     a owl:Class ;
     rdfs:label "Agricultural Research" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#7452> .
 
 odo:ADCAT_00031
     a owl:Class ;
     rdfs:label "Soil Science" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#5560> .
 
 odo:ADCAT_00032
     a owl:Class ;
-    rdfs:label "Forest Research" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:label "Forestry" ;
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#1816> .
 
 odo:ADCAT_00033
     a owl:Class ;
     rdfs:label "Physical Science" ;
-    rdfs:subClassOf odo:ADCAT_00067 .
+    rdfs:subClassOf odo:ADCAT_00067 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#3917> .
 
 odo:ADCAT_00034
     a owl:Class ;
     rdfs:label "Chemistry" ;
-    rdfs:subClassOf odo:ADCAT_00033 .
+    rdfs:subClassOf odo:ADCAT_00033 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#2863> .
 
 odo:ADCAT_00035
     a owl:Class ;
     rdfs:label "Physics" ;
-    rdfs:subClassOf odo:ADCAT_00033 .
+    rdfs:subClassOf odo:ADCAT_00033 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#6066>, wikidata:Q413 .
 
 odo:ADCAT_00036
     a owl:Class ;
     rdfs:label "Astronomy" ;
-    rdfs:subClassOf odo:ADCAT_00033 .
+    rdfs:subClassOf odo:ADCAT_00033 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#4331> .
 
 odo:ADCAT_00037
     a owl:Class ;
     rdfs:label "Mathematics" ;
-    rdfs:subClassOf odo:ADCAT_00068 .
+    rdfs:subClassOf odo:ADCAT_00068 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#9313> .
 
 odo:ADCAT_00038
     a owl:Class ;
     rdfs:label "Geoscience" ;
-    rdfs:subClassOf odo:ADCAT_00033 .
+    rdfs:subClassOf odo:ADCAT_00033 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#1990> .
 
 odo:ADCAT_00039
     a owl:Class ;
     rdfs:label "Atmospheric Science" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#4730> .
 
 odo:ADCAT_00040
     a owl:Class ;
     rdfs:label "Oceanography" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#6456> .
 
 odo:ADCAT_00041
     a owl:Class ;
     rdfs:label "Geology" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#7981> .
 
 odo:ADCAT_00042
     a owl:Class ;
     rdfs:label "Geophysics" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#2002> .
 
 odo:ADCAT_00043
     a owl:Class ;
     rdfs:label "Geodesy" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#2110> .
 
 odo:ADCAT_00044
     a owl:Class ;
     rdfs:label "Geochemistry" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#4377> .
 
 odo:ADCAT_00045
     a owl:Class ;
     rdfs:label "Geography" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#3114> .
 
 odo:ADCAT_00049
     a owl:Class ;
     rdfs:label "Hydrology" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#9617> .
 
 odo:ADCAT_00050
     a owl:Class ;
     rdfs:label "Engineering" ;
-    rdfs:subClassOf odo:ADCAT_00000 .
+    rdfs:subClassOf odo:ADCAT_00000 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#4019>, wikidata:Q11023 .
 
 odo:ADCAT_00052
     a owl:Class ;
@@ -230,27 +266,32 @@ odo:ADCAT_00052
 odo:ADCAT_00053
     a owl:Class ;
     rdfs:label "Materials Science" ;
-    rdfs:subClassOf odo:ADCAT_00050 .
+    rdfs:subClassOf odo:ADCAT_00050 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#8251> .
 
 odo:ADCAT_00055
     a owl:Class ;
     rdfs:label "Systems Engineering" ;
-    rdfs:subClassOf odo:ADCAT_00050 .
+    rdfs:subClassOf odo:ADCAT_00050 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#1866> .
 
 odo:ADCAT_00056
     a owl:Class ;
     rdfs:label "Electrical Engineering" ;
-    rdfs:subClassOf odo:ADCAT_00050 .
+    rdfs:subClassOf odo:ADCAT_00050 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#3462> .
 
 odo:ADCAT_00057
     a owl:Class ;
     rdfs:label "Computer Science" ;
-    rdfs:subClassOf odo:ADCAT_00068 .
+    rdfs:subClassOf odo:ADCAT_00068 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#2884> .
 
 odo:ADCAT_00058
     a owl:Class ;
     rdfs:label "Software Engineering" ;
-    rdfs:subClassOf odo:ADCAT_00050 .
+    rdfs:subClassOf odo:ADCAT_00050 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#2352> .
 
 odo:ADCAT_00062
     a owl:Class ;
@@ -265,17 +306,20 @@ odo:ADCAT_00063
 odo:ADCAT_00064
     a owl:Class ;
     rdfs:label "Statistics" ;
-    rdfs:subClassOf odo:ADCAT_00068 .
+    rdfs:subClassOf odo:ADCAT_00068 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#5750> .
 
 odo:ADCAT_00065
     a owl:Class ;
     rdfs:label "Anthropology" ;
-    rdfs:subClassOf odo:ADCAT_00004 .
+    rdfs:subClassOf odo:ADCAT_00004 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#2187> .
 
 odo:ADCAT_00066
     a owl:Class ;
     rdfs:label "Evolution" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#9401> .
 
 odo:ADCAT_00067
     a owl:Class ;
@@ -290,12 +334,14 @@ odo:ADCAT_00068
 odo:ADCAT_00069
     a owl:Class ;
     rdfs:label "Palaeontology" ;
-    rdfs:subClassOf odo:ADCAT_00038 .
+    rdfs:subClassOf odo:ADCAT_00038 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#2848> .
 
 odo:ADCAT_00070
     a owl:Class ;
     rdfs:label "Theoretical Biology" ;
-    rdfs:subClassOf odo:ADCAT_00010 .
+    rdfs:subClassOf odo:ADCAT_00010 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#5253> .
 
 odo:ADCAT_00071
     a owl:Class ;
@@ -305,17 +351,20 @@ odo:ADCAT_00071
 odo:ADCAT_00072
     a owl:Class ;
     rdfs:label "Chemical Engineering" ;
-    rdfs:subClassOf odo:ADCAT_00050 .
+    rdfs:subClassOf odo:ADCAT_00050 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#8050> .
 
 odo:ADCAT_00073
     a owl:Class ;
     rdfs:label "Civil Engineering" ;
-    rdfs:subClassOf odo:ADCAT_00050 .
+    rdfs:subClassOf odo:ADCAT_00050 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#8418> .
 
 odo:ADCAT_00074
     a owl:Class ;
     rdfs:label "Mechanical Engineering" ;
-    rdfs:subClassOf odo:ADCAT_00050 .
+    rdfs:subClassOf odo:ADCAT_00050 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#713>, wikidata:Q101333 .
 
 odo:ADCAT_00075
     a owl:Class ;
@@ -325,10 +374,12 @@ odo:ADCAT_00075
 odo:ADCAT_00076
     a owl:Class ;
     rdfs:label "Linguistics" ;
-    rdfs:subClassOf odo:ADCAT_00004 .
+    rdfs:subClassOf odo:ADCAT_00004 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#4752> .
 
 odo:ADCAT_00077
     a owl:Class ;
     rdfs:label "Sociology" ;
-    rdfs:subClassOf odo:ADCAT_00004 .
+    rdfs:subClassOf odo:ADCAT_00004 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#4823> .
 

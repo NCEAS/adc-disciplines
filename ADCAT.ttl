@@ -11,14 +11,14 @@
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 
 odo:ADCAT_
-    terms:created "2021-12-02"^^xsd:date ;
+    terms:created "2021-12-08"^^xsd:date ;
     terms:creator <https://orcid.org/0000-0003-0077-4738> ;
     terms:description "Ontology to support annotation of datasets housed at the Arctic Data Center (https://arcticdata.io)" ;
     terms:license <https://creativecommons.org/licenses/by/4.0/> ;
     terms:title "Arctic Data Center Annotation Terms Ontology (ADCAT)" ;
     a owl:Ontology ;
-    owl:versionIRI <ADCAT/0.5.0> ;
-    owl:versionInfo "Version 0.5.0" .
+    owl:versionIRI <ADCAT/0.6.0> ;
+    owl:versionInfo "Version 0.6.0" .
 
 odo:ADCAT_00000
     a owl:Class ;
@@ -242,9 +242,9 @@ odo:ADCAT_00044
 
 odo:ADCAT_00045
     a owl:Class ;
-    rdfs:label "Geography" ;
+    rdfs:label "Physical Geography" ;
     rdfs:subClassOf odo:ADCAT_00038 ;
-    owl:sameAs <http://localhost/plosthes.2017-1#3114> .
+    owl:sameAs <http://localhost/plosthes.2017-1#10439> .
 
 odo:ADCAT_00049
     a owl:Class ;
@@ -382,4 +382,22 @@ odo:ADCAT_00077
     rdfs:label "Sociology" ;
     rdfs:subClassOf odo:ADCAT_00004 ;
     owl:sameAs <http://localhost/plosthes.2017-1#4823> .
+
+odo:ADCAT_00078
+    a owl:Class ;
+    rdfs:label "Human Geography" ;
+    rdfs:subClassOf odo:ADCAT_00004 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#7999> .
+
+odo:ADCAT_00079
+    a owl:Class ;
+    rdfs:label "Glaciology" ;
+    rdfs:subClassOf odo:ADCAT_00080 ;
+    owl:sameAs <http://localhost/plosthes.2017-1#7901>, wikidata:Q52120 .
+
+odo:ADCAT_00080
+    a owl:Class ;
+    rdfs:label "Cryology" ;
+    rdfs:subClassOf odo:ADCAT_00049 ;
+    owl:sameAs wikidata:Q2383547 .
 

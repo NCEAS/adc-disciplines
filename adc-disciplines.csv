@@ -62,3 +62,5 @@ id,parent,discipline,level1,level2,level3,level4,code,plos_id,wikidata_id
 76,4,Linguistics,1,12,,,,4752,NA
 77,4,Sociology,1,12,,,,4823,NA
 78,4,Human Geography,1,12,,,,7999,NA
+79,80,Glaciology,3,34,,,,7901,Q52120
+80,49,Cryology,3,34,,,,NA,Q2383547

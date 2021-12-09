@@ -117,7 +117,7 @@ create_ontology <- function(graph_, namespaces, prefix, release) {
 
 create_rdf <- function(dfg) {
   prefix <- "ADCAT"
-  release <- '0.5.0'
+  release <- '0.6.0'
   namespaces <- list(
     odo="https://purl.dataone.org/odo/",
     dc="http://purl.org/dc/elements/1.1/",

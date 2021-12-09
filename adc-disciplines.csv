@@ -22,7 +22,7 @@ id,parent,discipline,level1,level2,level3,level4,code,plos_id,wikidata_id
 27,10,Epidemiology,2,22,205,1,20501,8910,NA
 28,10,Neuroscience,2,22,206,,206,3301,NA
 30,10,Agricultural Research,2,23,207,,207,7452,NA
-31,38,Soil Science,2,23,207,1,20701,5560,NA
+31,38,Soil Science,3,34,,,,5560,NA
 32,10,Forestry,2,23,207,10,20710,1816,NA
 33,67,Physical Science,3,,,,3,3917,NA
 34,33,Chemistry,3,31,,,31,2863,NA
@@ -36,7 +36,7 @@ id,parent,discipline,level1,level2,level3,level4,code,plos_id,wikidata_id
 42,38,Geophysics,3,34,315,1,31501,2002,NA
 43,38,Geodesy,3,34,315,2,31502,2110,NA
 44,38,Geochemistry,3,34,316,,316,4377,NA
-45,38,Geography,3,34,317,,317,3114,NA
+45,38,Physical Geography,3,34,317,,317,10439,NA
 49,38,Hydrology,3,34,318,1,31801,9617,NA
 50,0,Engineering,4,,,,4,4019,Q11023
 52,50,Materials Engineering,4,43,405,,405,NA,NA
@@ -61,3 +61,4 @@ id,parent,discipline,level1,level2,level3,level4,code,plos_id,wikidata_id
 75,68,Logic,5,54,,,,NA,NA
 76,4,Linguistics,1,12,,,,4752,NA
 77,4,Sociology,1,12,,,,4823,NA
+78,4,Human Geography,1,12,,,,7999,NA

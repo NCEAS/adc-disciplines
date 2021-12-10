@@ -1,0 +1,424 @@
+@base <https://purl.dataone.org/odo/ADCAD_> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix odo: <.> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix plos: <http://localhost/plosthes.2017-1#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+
+odo:ADCAD_
+    terms:created "2021-12-09"^^xsd:date ;
+    terms:creator <https://orcid.org/0000-0003-0077-4738> ;
+    terms:description "Ontology to support disciplinary annotation of datasets housed at the Arctic Data Center (https://arcticdata.io)" ;
+    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    terms:title "Arctic Data Center Academic Disciplines Ontology (ADCAD)" ;
+    a owl:Ontology ;
+    owl:versionIRI <ADCAD/1.0.0> ;
+    owl:versionInfo "Version 1.0.0" .
+
+odo:ADCAD_00000
+    a owl:Class ;
+    rdfs:label "Academic Discipline" ;
+    skos:exactMatch wikidata:Q11862829 .
+
+odo:ADCAD_00003
+    a owl:Class ;
+    rdfs:label "Archaeology" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#2668>, wikidata:Q23498 .
+
+odo:ADCAD_00004
+    a owl:Class ;
+    rdfs:label "Social Science" ;
+    rdfs:subClassOf odo:ADCAD_00000 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#8539>, wikidata:Q34749 .
+
+odo:ADCAD_00005
+    a owl:Class ;
+    rdfs:label "Education" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#4484>, wikidata:Q8434 .
+
+odo:ADCAD_00006
+    a owl:Class ;
+    rdfs:label "Psychology" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#6810>, wikidata:Q9418 .
+
+odo:ADCAD_00008
+    a owl:Class ;
+    rdfs:label "Political Science" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#3078>, wikidata:Q36442 .
+
+odo:ADCAD_00009
+    a owl:Class ;
+    rdfs:label "Economics" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#1>, wikidata:Q8134 .
+
+odo:ADCAD_00010
+    a owl:Class ;
+    rdfs:label "Life Science" ;
+    rdfs:subClassOf odo:ADCAD_00067 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#3625>, wikidata:Q864928 .
+
+odo:ADCAD_00013
+    a owl:Class ;
+    rdfs:label "Biochemistry" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#2243>, wikidata:Q7094 .
+
+odo:ADCAD_00014
+    a owl:Class ;
+    rdfs:label "Biophysics" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#1443>, wikidata:Q7100 .
+
+odo:ADCAD_00015
+    a owl:Class ;
+    rdfs:label "Cell Biology" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#1352>, wikidata:Q7141 .
+
+odo:ADCAD_00016
+    a owl:Class ;
+    rdfs:label "Structural Biology" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch wikidata:Q908902 .
+
+odo:ADCAD_00017
+    a owl:Class ;
+    rdfs:label "Genetics" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#6195>, wikidata:Q7162 .
+
+odo:ADCAD_00018
+    a owl:Class ;
+    rdfs:label "Developmental Biology" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#4415>, wikidata:Q213713 .
+
+odo:ADCAD_00019
+    a owl:Class ;
+    rdfs:label "Bioinformatics" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#3739>, wikidata:Q128570 .
+
+odo:ADCAD_00020
+    a owl:Class ;
+    rdfs:label "Anatomy" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#1761>, wikidata:Q514 .
+
+odo:ADCAD_00021
+    a owl:Class ;
+    rdfs:label "Plant Science" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#6638>, wikidata:Q441 .
+
+odo:ADCAD_00022
+    a owl:Class ;
+    rdfs:label "Zoology" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#5402>, wikidata:Q431 .
+
+odo:ADCAD_00023
+    a owl:Class ;
+    rdfs:label "Ecology" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#10424>, wikidata:Q7150 .
+
+odo:ADCAD_00025
+    a owl:Class ;
+    rdfs:label "Microbiology" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#3803>, wikidata:Q7193 .
+
+odo:ADCAD_00027
+    a owl:Class ;
+    rdfs:label "Epidemiology" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#8910>, wikidata:Q133805 .
+
+odo:ADCAD_00028
+    a owl:Class ;
+    rdfs:label "Neuroscience" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#3301>, wikidata:Q207011 .
+
+odo:ADCAD_00030
+    a owl:Class ;
+    rdfs:label "Agricultural Research" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#7452>, wikidata:Q3606845 .
+
+odo:ADCAD_00031
+    a owl:Class ;
+    rdfs:label "Soil Science" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#5560>, wikidata:Q9161265 .
+
+odo:ADCAD_00032
+    a owl:Class ;
+    rdfs:label "Forestry" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#1816>, wikidata:Q19924411 .
+
+odo:ADCAD_00033
+    a owl:Class ;
+    rdfs:label "Physical Science" ;
+    rdfs:subClassOf odo:ADCAD_00067 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#3917>, wikidata:Q14632398 .
+
+odo:ADCAD_00034
+    a owl:Class ;
+    rdfs:label "Chemistry" ;
+    rdfs:subClassOf odo:ADCAD_00033 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#2863>, wikidata:Q2329 .
+
+odo:ADCAD_00035
+    a owl:Class ;
+    rdfs:label "Physics" ;
+    rdfs:subClassOf odo:ADCAD_00033 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#6066>, wikidata:Q413 .
+
+odo:ADCAD_00036
+    a owl:Class ;
+    rdfs:label "Astronomy" ;
+    rdfs:subClassOf odo:ADCAD_00033 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#4331>, wikidata:Q333 .
+
+odo:ADCAD_00037
+    a owl:Class ;
+    rdfs:label "Mathematics" ;
+    rdfs:subClassOf odo:ADCAD_00068 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#9313>, wikidata:Q395 .
+
+odo:ADCAD_00038
+    a owl:Class ;
+    rdfs:label "Geoscience" ;
+    rdfs:subClassOf odo:ADCAD_00033 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#1990>, wikidata:Q8008 .
+
+odo:ADCAD_00039
+    a owl:Class ;
+    rdfs:label "Atmospheric Science" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#4730>, wikidata:Q757520 .
+
+odo:ADCAD_00040
+    a owl:Class ;
+    rdfs:label "Oceanography" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#6456>, wikidata:Q43518 .
+
+odo:ADCAD_00041
+    a owl:Class ;
+    rdfs:label "Geology" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#7981>, wikidata:Q1069 .
+
+odo:ADCAD_00042
+    a owl:Class ;
+    rdfs:label "Geophysics" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#2002>, wikidata:Q46255 .
+
+odo:ADCAD_00043
+    a owl:Class ;
+    rdfs:label "Geodesy" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#2110>, wikidata:Q131089 .
+
+odo:ADCAD_00044
+    a owl:Class ;
+    rdfs:label "Geochemistry" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#4377>, wikidata:Q161764 .
+
+odo:ADCAD_00045
+    a owl:Class ;
+    rdfs:label "Physical Geography" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#10439>, wikidata:Q52107 .
+
+odo:ADCAD_00049
+    a owl:Class ;
+    rdfs:label "Hydrology" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#9617>, wikidata:Q42250 .
+
+odo:ADCAD_00050
+    a owl:Class ;
+    rdfs:label "Engineering" ;
+    rdfs:subClassOf odo:ADCAD_00000 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#4019>, wikidata:Q11023 .
+
+odo:ADCAD_00052
+    a owl:Class ;
+    rdfs:label "Materials Engineering" ;
+    rdfs:subClassOf odo:ADCAD_00050 ;
+    skos:exactMatch wikidata:Q1710723 .
+
+odo:ADCAD_00053
+    a owl:Class ;
+    rdfs:label "Materials Science" ;
+    rdfs:subClassOf odo:ADCAD_00050 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#8251>, wikidata:Q228736 .
+
+odo:ADCAD_00055
+    a owl:Class ;
+    rdfs:label "Systems Engineering" ;
+    rdfs:subClassOf odo:ADCAD_00050 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#1866>, wikidata:Q682496 .
+
+odo:ADCAD_00056
+    a owl:Class ;
+    rdfs:label "Electrical Engineering" ;
+    rdfs:subClassOf odo:ADCAD_00050 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#3462>, wikidata:Q43035 .
+
+odo:ADCAD_00057
+    a owl:Class ;
+    rdfs:label "Computer Science" ;
+    rdfs:subClassOf odo:ADCAD_00068 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#2884>, wikidata:Q21198 .
+
+odo:ADCAD_00058
+    a owl:Class ;
+    rdfs:label "Software Engineering" ;
+    rdfs:subClassOf odo:ADCAD_00050 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#2352>, wikidata:Q80993 .
+
+odo:ADCAD_00062
+    a owl:Class ;
+    rdfs:label "Cyberinfrastructure" ;
+    rdfs:subClassOf odo:ADCAD_00050 ;
+    skos:exactMatch wikidata:Q1450531 .
+
+odo:ADCAD_00063
+    a owl:Class ;
+    rdfs:label "Data science" ;
+    rdfs:subClassOf odo:ADCAD_00068 ;
+    skos:exactMatch wikidata:Q2374463 .
+
+odo:ADCAD_00064
+    a owl:Class ;
+    rdfs:label "Statistics" ;
+    rdfs:subClassOf odo:ADCAD_00068 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#5750>, wikidata:Q12483 .
+
+odo:ADCAD_00065
+    a owl:Class ;
+    rdfs:label "Anthropology" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#2187>, wikidata:Q23404 .
+
+odo:ADCAD_00066
+    a owl:Class ;
+    rdfs:label "Evolutionary Biology" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#9401>, wikidata:Q840400 .
+
+odo:ADCAD_00067
+    a owl:Class ;
+    rdfs:label "Natural Science" ;
+    rdfs:subClassOf odo:ADCAD_00000 ;
+    skos:exactMatch wikidata:Q7991 .
+
+odo:ADCAD_00068
+    a owl:Class ;
+    rdfs:label "Formal Science" ;
+    rdfs:subClassOf odo:ADCAD_00000 ;
+    skos:exactMatch wikidata:Q816264 .
+
+odo:ADCAD_00069
+    a owl:Class ;
+    rdfs:label "Palaeontology" ;
+    rdfs:subClassOf odo:ADCAD_00038 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#2848>, wikidata:Q7205 .
+
+odo:ADCAD_00070
+    a owl:Class ;
+    rdfs:label "Theoretical Biology" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#5253>, wikidata:Q2419229 .
+
+odo:ADCAD_00071
+    a owl:Class ;
+    rdfs:label "Ethnology" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch wikidata:Q43455 .
+
+odo:ADCAD_00072
+    a owl:Class ;
+    rdfs:label "Chemical Engineering" ;
+    rdfs:subClassOf odo:ADCAD_00050 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#8050>, wikidata:Q83588 .
+
+odo:ADCAD_00073
+    a owl:Class ;
+    rdfs:label "Civil Engineering" ;
+    rdfs:subClassOf odo:ADCAD_00050 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#8418>, wikidata:Q77590 .
+
+odo:ADCAD_00074
+    a owl:Class ;
+    rdfs:label "Mechanical Engineering" ;
+    rdfs:subClassOf odo:ADCAD_00050 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#713>, wikidata:Q101333 .
+
+odo:ADCAD_00075
+    a owl:Class ;
+    rdfs:label "Logic" ;
+    rdfs:subClassOf odo:ADCAD_00068 ;
+    skos:exactMatch wikidata:Q8078 .
+
+odo:ADCAD_00076
+    a owl:Class ;
+    rdfs:label "Linguistics" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#4752>, wikidata:Q8162 .
+
+odo:ADCAD_00077
+    a owl:Class ;
+    rdfs:label "Sociology" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#4823>, wikidata:Q21201 .
+
+odo:ADCAD_00078
+    a owl:Class ;
+    rdfs:label "Human Geography" ;
+    rdfs:subClassOf odo:ADCAD_00004 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#7999>, wikidata:Q12831143 .
+
+odo:ADCAD_00079
+    a owl:Class ;
+    rdfs:label "Glaciology" ;
+    rdfs:subClassOf odo:ADCAD_00080 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#7901>, wikidata:Q52120 .
+
+odo:ADCAD_00080
+    a owl:Class ;
+    rdfs:label "Cryology" ;
+    rdfs:subClassOf odo:ADCAD_00049 ;
+    skos:exactMatch wikidata:Q2383547 .
+
+odo:ADCAD_00081
+    a owl:Class ;
+    rdfs:label "International Relations" ;
+    rdfs:subClassOf odo:ADCAD_00008 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#1449>, wikidata:Q166542 .
+
+odo:ADCAD_00082
+    a owl:Class ;
+    rdfs:label "Biodiversity" ;
+    rdfs:subClassOf odo:ADCAD_00010 ;
+    skos:exactMatch <http://localhost/plosthes.2017-1#4462>, wikidata:Q47041 .
+

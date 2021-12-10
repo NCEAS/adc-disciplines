@@ -1,66 +1,68 @@
 id,parent,discipline,level1,level2,level3,level4,code,plos_id,wikidata_id
 0,,Academic Discipline,0,,,,0,NA,Q11862829
-3,4,Archaeology,1,11,101,4,10104,2668,NA
+3,4,Archaeology,1,11,101,4,10104,2668,Q23498
 4,0,Social Science,1,12,,,12,8539,Q34749
-5,4,Education,1,12,109,,109,4484,NA
+5,4,Education,1,12,109,,109,4484,Q8434
 6,4,Psychology,1,12,110,,110,6810,Q9418
-8,4,Political Science,1,12,111,4,11104,3078,NA
-9,4,Economics,1,12,112,,112,1,NA
+8,4,Political Science,1,12,111,4,11104,3078,Q36442
+9,4,Economics,1,12,112,,112,1,Q8134
 10,67,Life Science,2,,,,2,3625,Q864928
-13,10,Biochemistry,2,21,201,1,20101,2243,NA
-14,10,Biophysics,2,21,201,2,20102,1443,NA
-15,10,Cell Biology,2,21,201,3,20103,1352,NA
-16,10,Structural Biology,2,21,201,4,20104,NA,NA
+13,10,Biochemistry,2,21,201,1,20101,2243,Q7094
+14,10,Biophysics,2,21,201,2,20102,1443,Q7100
+15,10,Cell Biology,2,21,201,3,20103,1352,Q7141
+16,10,Structural Biology,2,21,201,4,20104,NA,Q908902
 17,10,Genetics,2,21,201,5,20105,6195,Q7162
-18,10,Developmental Biology,2,21,201,6,20106,4415,NA
-19,10,Bioinformatics,2,21,201,7,20107,3739,NA
-20,10,Anatomy,2,21,201,8,20108,1761,NA
-21,10,Plant Science,2,21,202,,202,6638,NA
-22,10,Zoology,2,21,203,,203,5402,NA
-23,10,Ecology and Biodiversity,2,21,203,3,20303,10424,NA
-25,10,Microbiology,2,22,204,,204,3803,NA
-27,10,Epidemiology,2,22,205,1,20501,8910,NA
-28,10,Neuroscience,2,22,206,,206,3301,NA
-30,10,Agricultural Research,2,23,207,,207,7452,NA
-31,38,Soil Science,3,34,,,,5560,NA
-32,10,Forestry,2,23,207,10,20710,1816,NA
-33,67,Physical Science,3,,,,3,3917,NA
-34,33,Chemistry,3,31,,,31,2863,NA
+18,10,Developmental Biology,2,21,201,6,20106,4415,Q213713
+19,10,Bioinformatics,2,21,201,7,20107,3739,Q128570
+20,10,Anatomy,2,21,201,8,20108,1761,Q514
+21,10,Plant Science,2,21,202,,202,6638,Q441
+22,10,Zoology,2,21,203,,203,5402,Q431
+23,10,Ecology,2,21,203,3,20303,10424,Q7150
+25,10,Microbiology,2,22,204,,204,3803,Q7193
+27,10,Epidemiology,2,22,205,1,20501,8910,Q133805
+28,10,Neuroscience,2,22,206,,206,3301,Q207011
+30,10,Agricultural Research,2,23,207,,207,7452,Q3606845
+31,38,Soil Science,3,34,,,,5560,Q9161265
+32,10,Forestry,2,23,207,10,20710,1816,Q19924411
+33,67,Physical Science,3,,,,3,3917,Q14632398
+34,33,Chemistry,3,31,,,31,2863,Q2329
 35,33,Physics,3,32,,,32,6066,Q413
-36,33,Astronomy,3,32,311,,311,4331,NA
-37,68,Mathematics,5,51,,,,9313,NA
-38,33,Geoscience,3,34,,,34,1990,NA
-39,38,Atmospheric Science,3,34,313,1,31301,4730,NA
-40,38,Oceanography,3,34,313,2,31302,6456,NA
-41,38,Geology,3,34,314,,314,7981,NA
-42,38,Geophysics,3,34,315,1,31501,2002,NA
-43,38,Geodesy,3,34,315,2,31502,2110,NA
-44,38,Geochemistry,3,34,316,,316,4377,NA
-45,38,Physical Geography,3,34,317,,317,10439,NA
-49,38,Hydrology,3,34,318,1,31801,9617,NA
+36,33,Astronomy,3,32,311,,311,4331,Q333
+37,68,Mathematics,5,51,,,,9313,Q395
+38,33,Geoscience,3,34,,,34,1990,Q8008
+39,38,Atmospheric Science,3,34,313,1,31301,4730,Q757520
+40,38,Oceanography,3,34,313,2,31302,6456,Q43518
+41,38,Geology,3,34,314,,314,7981,Q1069
+42,38,Geophysics,3,34,315,1,31501,2002,Q46255
+43,38,Geodesy,3,34,315,2,31502,2110,Q131089
+44,38,Geochemistry,3,34,316,,316,4377,Q161764
+45,38,Physical Geography,3,34,317,,317,10439,Q52107
+49,38,Hydrology,3,34,318,1,31801,9617,Q42250
 50,0,Engineering,4,,,,4,4019,Q11023
-52,50,Materials Engineering,4,43,405,,405,NA,NA
-53,50,Materials Science,4,43,406,,406,8251,NA
-55,50,Systems Engineering,4,44,407,,407,1866,NA
-56,50,Electrical Engineering,4,44,408,,408,3462,NA
-57,68,Computer Science,5,53,,,,2884,NA
-58,50,Software Engineering,4,44,409,2,40902,2352,NA
-62,50,Cyberinfrastructure,4,44,409,6,40906,NA,NA
-63,68,Data science,5,54,,,,NA,NA
-64,68,Statistics,5,52,,,,5750,NA
-65,4,Anthropology,1,10,106,6,10601,2187,NA
-66,10,Evolution,2,21,201,9,20109,9401,NA
-67,0,Natural Science,3,,,,3,NA,NA
-68,0,Formal Science,5,,,,5,NA,NA
-69,38,Palaeontology,3,34,314,,314,2848,NA
-70,10,Theoretical Biology,2,21,,,20107,5253,NA
-71,4,Ethnology,1,10,106,6,10601,NA,NA
-72,50,Chemical Engineering,4,44,,,,8050,NA
-73,50,Civil Engineering,4,44,,,,8418,NA
+52,50,Materials Engineering,4,43,405,,405,NA,Q1710723
+53,50,Materials Science,4,43,406,,406,8251,Q228736
+55,50,Systems Engineering,4,44,407,,407,1866,Q682496
+56,50,Electrical Engineering,4,44,408,,408,3462,Q43035
+57,68,Computer Science,5,53,,,,2884,Q21198
+58,50,Software Engineering,4,44,409,2,40902,2352,Q80993
+62,50,Cyberinfrastructure,4,44,409,6,40906,NA,Q1450531
+63,68,Data science,5,54,,,,NA,Q2374463
+64,68,Statistics,5,52,,,,5750,Q12483
+65,4,Anthropology,1,10,106,6,10601,2187,Q23404
+66,10,Evolutionary Biology,2,21,201,9,20109,9401,Q840400
+67,0,Natural Science,3,,,,3,NA,Q7991
+68,0,Formal Science,5,,,,5,NA,Q816264
+69,38,Palaeontology,3,34,314,,314,2848,Q7205
+70,10,Theoretical Biology,2,21,,,20107,5253,Q2419229
+71,4,Ethnology,1,10,106,6,10601,NA,Q43455
+72,50,Chemical Engineering,4,44,,,,8050,Q83588
+73,50,Civil Engineering,4,44,,,,8418,Q77590
 74,50,Mechanical Engineering,4,44,,,,713,Q101333
-75,68,Logic,5,54,,,,NA,NA
-76,4,Linguistics,1,12,,,,4752,NA
-77,4,Sociology,1,12,,,,4823,NA
-78,4,Human Geography,1,12,,,,7999,NA
+75,68,Logic,5,54,,,,NA,Q8078
+76,4,Linguistics,1,12,,,,4752,Q8162
+77,4,Sociology,1,12,,,,4823,Q21201
+78,4,Human Geography,1,12,,,,7999,Q12831143
 79,80,Glaciology,3,34,,,,7901,Q52120
 80,49,Cryology,3,34,,,,NA,Q2383547
+81,8,International Relations,1,12,,,,1449,Q166542
+82,10,Biodiversity,2,21,,,,4462,Q47041

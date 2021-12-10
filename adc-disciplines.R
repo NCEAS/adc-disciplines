@@ -59,14 +59,14 @@ create_class <- function(row, graph_, namespaces, prefix) {
     plos_uri <- paste0(namespaces$plos, row[[9]])
     graph_ <- rdf_add(graph_, 
                       subject=class_id,
-                      predicate=paste0(namespaces$owl, "sameAs"),
+                      predicate=paste0(namespaces$skos, "exactMatch"),
                       object=plos_uri)  
   }
   if (!is.na(row[[10]])) {
     wikidata_uri <- paste0(namespaces$wikidata, row[[10]])
     graph_ <- rdf_add(graph_, 
                       subject=class_id,
-                      predicate=paste0(namespaces$owl, "sameAs"),
+                      predicate=paste0(namespaces$skos, "exactMatch"),
                       object=wikidata_uri)  
   }
   
@@ -95,11 +95,11 @@ create_ontology <- function(graph_, namespaces, prefix, release) {
   rdf_add(graph_, 
           subject=onto_id,
           predicate=paste0(namespaces$terms, "description"),
-          object="Ontology to support annotation of datasets housed at the Arctic Data Center (https://arcticdata.io)")
+          object="Ontology to support disciplinary annotation of datasets housed at the Arctic Data Center (https://arcticdata.io)")
   rdf_add(graph_, 
           subject=onto_id,
           predicate=paste0(namespaces$terms, "title"),
-          object="Arctic Data Center Annotation Terms Ontology (ADCAT)")
+          object="Arctic Data Center Academic Disciplines Ontology (ADCAD)")
   rdf_add(graph_, 
           subject=onto_id,
           predicate=paste0(namespaces$terms, "license"),
@@ -116,8 +116,8 @@ create_ontology <- function(graph_, namespaces, prefix, release) {
 }
 
 create_rdf <- function(dfg) {
-  prefix <- "ADCAT"
-  release <- '0.6.0'
+  prefix <- "ADCAD"
+  release <- '1.0.0'
   namespaces <- list(
     odo="https://purl.dataone.org/odo/",
     dc="http://purl.org/dc/elements/1.1/",
@@ -129,12 +129,13 @@ create_rdf <- function(dfg) {
     terms="http://purl.org/dc/terms/",
     xsd="http://www.w3.org/2001/XMLSchema#",
     plos="http://localhost/plosthes.2017-1#",
+    skos="http://www.w3.org/2004/02/skos/core#",
     wikidata="https://www.wikidata.org/wiki/"
   )
   graph <- rdf()
   create_ontology(graph, namespaces, prefix, release)
   graph_sizes <- apply(dfg, 1, create_class, graph, namespaces, prefix)
-  rdf_serialize(graph, paste0(prefix, ".ttl"), base="https://purl.dataone.org/odo/ADCAT_", format="turtle", namespace=unlist(namespaces))
+  rdf_serialize(graph, paste0(prefix, ".ttl"), base="https://purl.dataone.org/odo/ADCAD_", format="turtle", namespace=unlist(namespaces))
   return(graph)
 }
 

@@ -7,35 +7,43 @@ library(scico)
 library(rdflib)
 library(tidyr)
 
-# Load the default categories from DFG, but simplify some labels
-dfg <- vroom("adc-disciplines.csv", col_types="ddcdddddcc", show_col_types = FALSE) %>%
-  rename(name=discipline, dfg_code=code) %>% 
-  arrange(level1, parent, name)
+main <- function() {
+  dfg <- vroom("adc-disciplines.csv", col_types="ddcdddddcc", show_col_types = FALSE) %>%
+    rename(name=discipline, dfg_code=code) %>% 
+    arrange(level1, parent, name)
+  create_graph(dfg)
+  options(rdf_print_format = "turtle")
+  options(rdf_max_print = 10000)
+  graph <- create_rdf(dfg)
+}
 
-# Create edge list and nodelist from the DFG taxonomy, and set the subject to a discipline-related value
-edges <- dfg %>% select(parent, id) %>% filter(id!=0)
-nodes <- dfg %>% 
-  mutate(subject=if_else(is.na(level2), level1, level1, level1)) %>% 
-  mutate(subject=if_else(subject<10, subject*10, subject)) %>% 
-  mutate(name=trimws(name, which="both")) %>% 
-  select(id, name, subject) %>%
-  distinct()
-
-# Create the graph using igraph
-discipline_graph <- graph_from_data_frame(edges, vertices=nodes)
-
-# Basic discipline tree plotted
-ggraph(discipline_graph, layout = 'dendrogram', circular = FALSE) + 
-  geom_edge_diagonal() +
-  geom_node_point() +
-  geom_node_text(aes(label=name, filter=leaf, color=subject), angle=90 , hjust=1.05, nudge_y = -0.05) +
-  geom_node_label(aes(label=name, filter=!leaf, color=subject), repel = TRUE) +
-  ylim(-4, NA) +
-  scale_color_scico(palette = 'batlow', end=0.7) +
-  theme_void() +
-  theme(legend.position = "none")
-
-ggsave("adc-disciplines.png", width=12)
+create_graph <- function(dfg) {
+  # Create edge list and nodelist from the DFG taxonomy, and set the subject to a discipline-related value
+  edges <- dfg %>% select(parent, id) %>% filter(id!=0)
+  nodes <- dfg %>% 
+    mutate(subject=if_else(is.na(level2), level1, level1, level1)) %>% 
+    mutate(subject=if_else(subject<10, subject*10, subject)) %>% 
+    mutate(name=trimws(name, which="both")) %>% 
+    select(id, name, subject) %>%
+    distinct()
+  
+  # Create the graph using igraph
+  discipline_graph <- graph_from_data_frame(edges, vertices=nodes)
+  
+  # Basic discipline tree plotted
+  gg <- ggraph(discipline_graph, layout = 'dendrogram', circular = FALSE) + 
+    geom_edge_diagonal() +
+    geom_node_point() +
+    geom_node_text(aes(label=name, filter=leaf, color=subject), angle=90 , hjust=1.05, nudge_y = -0.05) +
+    geom_node_label(aes(label=name, filter=!leaf, color=subject), repel = TRUE) +
+    ylim(-4, NA) +
+    scale_color_scico(palette = 'batlow', end=0.7) +
+    theme_void() +
+    theme(legend.position = "none")
+  
+  ggsave("adc-disciplines.png", width=12)
+  return(gg)
+}
 
 create_class <- function(row, graph_, namespaces, prefix) {
   print(paste0("Processing: ", row[[3]]))
@@ -139,9 +147,7 @@ create_rdf <- function(dfg) {
   return(graph)
 }
 
-options(rdf_print_format = "turtle")
-options(rdf_max_print = 10000)
-graph <- create_rdf(dfg)
+main()
 
 # load_plos <- function() {
 #   plos <- PLOSTHES %>% 
